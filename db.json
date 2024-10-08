@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "id": "3",
+      "title": "a title",
+      "body": 100
+    },
+    {
+      "id": "4",
+      "title": "a title",
+      "body": 100
+    },
+    {
+      "id": "5",
+      "title": "a title",
+      "body": 100
+    },
+    {
+      "id": "6",
+      "title": "две попы",
+      "body": 100
+    },
+    {
+      "id": "7",
+      "title": "попа",
+      "body": 100
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": null
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": null
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

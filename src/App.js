@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import { addCounter } from "./store/countToolkitReducer";
 import { addTimedOut } from "./store/countToolkitReducer";
 import { fetchUsers } from "./store/userSlice";
-import { UserContainer } from "./components/userContainer";
-import { UserContainer2 } from "./components/userContainer2";
+import { PostContainer } from "./components/postContainer";
+import { PostContainer2 } from "./components/postContainer2";
 
 function App() {
   // const dispatch = useDispatch();
@@ -33,8 +33,11 @@ function App() {
         {error && <h1>{error}</h1>}
         {JSON.stringify(users, null, 2)}
       </div> */}
-      <UserContainer />
-      <UserContainer2 />
+      <div style={{display: "flex"}}>
+          <PostContainer />
+          <PostContainer2 />
+      </div>
+      
       
     </div>
   );
