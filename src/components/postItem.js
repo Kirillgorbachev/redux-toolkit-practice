@@ -1,13 +1,17 @@
-export const PostItem = ({post, remove, update}) => {
+import { postAPI } from "../Services/userService";
+
+export const PostItem = ({post}) => {
+    const [updatePost, {}] = postAPI.useUpdatePostMutation();
+    const [deletePost, {}] = postAPI.useDeletePostMutation();
 
     const handleRemove = (event) => {
         event.stopPropagation();
-        remove(post);
+        deletePost(post);
     }
 
     const handleUpdate = (event) => {
         const title = prompt() || "";
-        update({...post, title});
+        updatePost({...post, title});
     }
 
     return (
